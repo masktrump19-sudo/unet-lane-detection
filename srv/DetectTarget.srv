@@ -1,0 +1,7 @@
+# Request
+string aim_type  
+bool if_parking
+---
+# Response
+bool if_success
+string obj_name

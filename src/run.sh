@@ -1,0 +1,1 @@
+python3 /home/ucar/ucar_ws/src/rknn_pkg/src/yolo_detector.py --model_path /home/ucar/ucar_ws/src/rknn_pkg/launch/config/large.rknn

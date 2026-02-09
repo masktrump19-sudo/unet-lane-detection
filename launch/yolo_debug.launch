@@ -1,0 +1,7 @@
+<launch>
+    <node name="yolo_debug" pkg="rknn_pkg" type="yolo_debug.py" output="screen">
+        <param name="model_path" value="$(find rknn_pkg)/model/806.rknn"/>
+        <param name="target" value="rk3588"/>
+        <param name="device_id" value="0"/>
+    </node>
+</launch>

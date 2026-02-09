@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ROS
+*.bag
+*.log
+
+# 大文件/视频（可选择性保留）
+*.mp4
+*.avi
+*.mov
+
+# 临时文件
+*.tmp
+*.bak
+*~
+
+# 模型文件（如果太大可以排除，用户需要自行下载）
+# model/*.rknn
+
+# 测试输出
+output_*.mp4
+*_result.png
+
+# OS
+.DS_Store
+Thumbs.db
