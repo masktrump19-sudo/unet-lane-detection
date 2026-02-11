@@ -85,22 +85,16 @@ mask = cv2.inRange(hsv_image, lower, upper)
 
 ### 检测效果对比
 
-下表展示了在不同场景下，传统HSV方法与U-Net方法的检测效果对比：
+下图展示了传统HSV方法与U-Net方法的检测效果对比：
 
-| 场景 | 原始图像 | HSV方法结果 | U-Net方法结果 |
-|:----:|:--------:|:-----------:|:-------------:|
-| **正常光照** | ![原图1](assets/demo/normal_raw.jpg) | ![HSV1](assets/demo/normal_hsv.jpg) | ![UNet1](assets/demo/normal_unet.jpg) |
-| **强光照射** | ![原图2](assets/demo/bright_raw.jpg) | ![HSV2](assets/demo/bright_hsv.jpg) | ![UNet2](assets/demo/bright_unet.jpg) |
-| **白平衡偏黄** | ![原图3](assets/demo/yellow_raw.jpg) | ![HSV3](assets/demo/yellow_hsv.jpg) | ![UNet3](assets/demo/yellow_unet.jpg) |
-| **白平衡偏蓝** | ![原图4](assets/demo/blue_raw.jpg) | ![HSV4](assets/demo/blue_hsv.jpg) | ![UNet4](assets/demo/blue_unet.jpg) |
-| **阴影遮挡** | ![原图5](assets/demo/shadow_raw.jpg) | ![HSV5](assets/demo/shadow_hsv.jpg) | ![UNet5](assets/demo/shadow_unet.jpg) |
-
-> 📁 **图片存放位置**: 请将对比图片放置在 `docs/assets/demo/` 目录下
+| 原始图像 | HSV方法结果 | U-Net方法结果 |
+|:--------:|:-----------:|:-------------:|
+| ![原图](assets/demo/frame_0034.jpg) | ![HSV](assets/demo/normal_hsv.jpg) | ![UNet](assets/demo/normal_unet.jpg) |
 
 ### 效果说明
 
 | 场景 | HSV方法表现 | U-Net方法表现 |
-|-----|-----------|--------------|
+|:-----|:-----------|:--------------|
 | 正常光照 | ✅ 检测正常 | ✅ 检测正常 |
 | 强光照射 | ⚠️ 部分过曝区域丢失 | ✅ 稳定检测 |
 | 白平衡偏黄 | ❌ 大面积检测失败 | ✅ 稳定检测 |
@@ -109,21 +103,11 @@ mask = cv2.inRange(hsv_image, lower, upper)
 
 ### 视频演示
 
-#### 🎥 实车运行演示
+#### 🎥 检测效果演示
 
-[![实车演示](assets/video_thumbnail.jpg)](https://your-video-link.com)
+https://github.com/user-attachments/assets/result.mp4
 
-> 点击图片观看完整演示视频
-
-#### 📊 检测效果对比视频
-
-| 视频内容 | 链接 |
-|---------|------|
-| HSV vs U-Net 实时对比 | [观看](https://your-link.com) |
-| 不同光照条件测试 | [观看](https://your-link.com) |
-| 白平衡漂移测试 | [观看](https://your-link.com) |
-
-> 📝 **注意**: 请将演示视频上传至 Bilibili/YouTube 后替换上述链接
+> 📹 演示视频展示了U-Net车道线检测的实时效果
 
 ### 鸟瞰图可视化
 
@@ -5374,7 +5358,7 @@ SOFTWARE.
     </tr>
     <tr>
       <td>🐛 <strong>Issues</strong></td>
-      <td><a href="https://github.com/masktrump19-sudo/rknn_pkg/issues">报告Bug或提出建议</a></td>
+      <td><a href="https://github.com/masktrump19-sudo/unet-lane-detection/issues">报告Bug或提出建议</a></td>
     </tr>
   </table>
 </div>
