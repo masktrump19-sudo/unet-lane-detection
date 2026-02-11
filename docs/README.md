@@ -265,32 +265,9 @@ def extract_white_lanes(self, image):
 └─────────────────────────────────────────────────────────────┘
 ```
 
-**代码示例**（摘自本项目 `unet_ros_node.py`）：
+**代码示例**：
 
-```python
-def predict(self, image, threshold=0.5):
-    """U-Net推理 - 深度学习方法"""
-    # 预处理：调整尺寸，添加batch维度
-    input_data, original_shape = self.preprocess_image(image)
-    
-    # 神经网络推理 (RKNN NPU加速)
-    outputs = self.model.run(inputs=[input_data])
-    
-    # 后处理
-    mask = outputs[0]
-    
-    # Sigmoid激活（将logits转为概率）
-    if mask.max() > 1.0 or mask.min() < 0.0:
-        mask = 1 / (1 + np.exp(-mask))
-    
-    # 阈值二值化：概率 > 0.5 判定为车道线
-    binary_mask = (mask > threshold).astype(np.uint8) * 255
-    
-    # 恢复原始尺寸
-    binary_mask = cv2.resize(binary_mask, (original_shape[1], original_shape[0]))
-    
-    return binary_mask
-```
+> 📄 完整实现请查看 [`src/unet_ros_node.py`](../src/unet_ros_node.py) 中的 `predict()` 方法
 
 **优点**：
 - ✅ 光照鲁棒：训练数据包含多种光照条件
