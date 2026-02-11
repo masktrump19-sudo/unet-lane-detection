@@ -108,7 +108,7 @@ mask = cv2.inRange(hsv_image, lower, upper)
 
 | 原始图像 | HSV方法结果 | U-Net方法结果 |
 |:--------:|:-----------:|:-------------:|
-| ![原图](assets/demo/frame_0034.jpg) | ![HSV](assets/demo/normal_hsv.jpg) | ![UNet](assets/demo/normal_unet.jpg) |
+| ![原图](assets/demo/normal_raw.jpg) | ![HSV](assets/demo/normal_hsv.jpg) | ![UNet](assets/demo/normal_unet.jpg) |
 
 ### 效果说明
 
@@ -154,11 +154,11 @@ https://github.com/user-attachments/assets/result.mp4
 └────────────────────────────────────────┘
 ```
 
-| 处理阶段 | 图像 |
-|---------|------|
-| 透视变换后的鸟瞰图 | ![鸟瞰图](assets/demo/bird_view.jpg) |
-| U-Net输出的二值掩码 | ![掩码](assets/demo/binary_mask.jpg) |
-| 叠加可视化效果 | ![叠加](assets/demo/overlay.jpg) |
+| 未使用IPM | 使用IPM后 |
+|:--------:|:-----------:|
+| ![非IPM](assets/demo/No_IPM.png) | ![IPM](assets/demo/IPM.jpg) |
+
+> 鸟瞰图变换可以消除透视影响，使车道线平行，便于后续处理
 
 ---
 
