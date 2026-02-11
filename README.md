@@ -122,7 +122,7 @@ mask = cv2.inRange(hsv_image, lower, upper)
 
 ### 视频演示
 
-#### � 仅IPM处理（无U-Net）
+#### 📽️ 仅IPM处理（无U-Net）
 
 https://github.com/user-attachments/assets/d2de8339-f69c-46de-bf97-af9771c08f29
 
