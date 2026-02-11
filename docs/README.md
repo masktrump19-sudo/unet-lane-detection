@@ -643,7 +643,7 @@ rknn-toolkit2>=1.5.0  # 仅在RK3588上需要
 cd ~/catkin_ws/src
 
 # 克隆本项目
-git clone https://github.com/your-username/rknn_pkg.git
+git clone https://github.com/masktrump19-sudo/unet-lane-detection.git
 
 # 返回工作空间根目录
 cd ~/catkin_ws
@@ -5143,8 +5143,8 @@ rosrun rqt_console rqt_console
 
 ```bash
 # Fork 本仓库后
-git clone https://github.com/your-username/rknn_pkg.git
-cd rknn_pkg
+git clone https://github.com/masktrump19-sudo/unet-lane-detection.git
+cd unet-lane-detection
 
 # 创建功能分支
 git checkout -b feature/your-feature
