@@ -122,11 +122,17 @@ mask = cv2.inRange(hsv_image, lower, upper)
 
 ### 视频演示
 
-#### 🎥 检测效果演示
+#### � 仅IPM处理（无U-Net）
 
-https://github.com/user-attachments/assets/result.mp4
+https://github.com/user-attachments/assets/d2de8339-f69c-46de-bf97-af9771c08f29
 
-> 📹 演示视频展示了U-Net车道线检测的实时效果
+> 📹 仅进行透视变换，未使用U-Net进行车道线检测
+
+#### 🎬 IPM + U-Net处理
+
+https://github.com/user-attachments/assets/e3e4b961-736a-4e59-8f29-74b8bb600461
+
+> 📹 经过U-Net车道线检测后的实时效果
 
 ### 鸟瞰图可视化
 
